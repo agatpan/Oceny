@@ -30,7 +30,7 @@ public class Pupil {
 
     public float averageMark() {
         float averageMark;
-        int suma = 0;
+        float suma = 0;
         for (Integer mark : allMarks)
             suma += mark;
 
