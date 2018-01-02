@@ -4,11 +4,11 @@ public class Pupil {
 
     public String firstName;
     public String secondName;
-    public int averegeMark;
-    public List<int> allMarksTab = new ArrayList<int>();
+    public int mark;
+    public List<mark> allMarksTab = new ArrayList<mark>();
 
 
-    public Pupil (String firstName, String secondName, List<int>){
+    public Pupil (String firstName, String secondName, List<mark>){
         this.firstName = firstName;
         this.secondName = secondName;
         this.allMarksTab = createMarksTab();
@@ -31,7 +31,7 @@ public class Pupil {
     public int sumMarks(allMarksTab){
             int suma=0;
             int nr=0;
-            while(nr < allMarksTab.length){
+            while(nr <allMarksTab.length){
                 suma = suma + allMarksTab[nr];
                 nr ++;
             }
