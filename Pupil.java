@@ -1,17 +1,19 @@
 import java.util.ArrayList;
+import java.util.List;
 
 public class Pupil {
 
-    public String firstName;
-    public String secondName;
-    public int mark;
-    public List<mark> allMarksTab = new ArrayList<mark>();
+    private String firstName;
+    private String secondName;
+    private Integer mark;
+    public List<Integer> allMarks;
 
 
-    public Pupil (String firstName, String secondName, List<mark>){
+    public Pupil (String firstName, String secondName, List<Integer> allMarks){
         this.firstName = firstName;
         this.secondName = secondName;
-        this.allMarksTab = createMarksTab();
+        this.allMarks = allMarks;
+
     }
 
     public String getFirstName() {
@@ -22,27 +24,21 @@ public class Pupil {
         return secondName;
     }
 
-    public int Array.getMarksTab() {
-        return allMarksTab;
+    public List<Integer> getAllMarks(){
+        return allMarks;
     }
 
-    public int averageMark() {
+    public float averageMark() {
+        float averageMark;
+        int suma = 0;
+        for (Integer mark : allMarks)
+            suma += mark;
 
-    public int sumMarks(allMarksTab){
-            int suma=0;
-            int nr=0;
-            while(nr <allMarksTab.length){
-                suma = suma + allMarksTab[nr];
-                nr ++;
-            }
+        averageMark = suma / allMarks.size();
 
-        }
-        averageMark = sumMarks / allMarksTab.length;
-
-    }
 
         return averageMark;
 
-
+    }
     }
 
