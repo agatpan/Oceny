@@ -1,11 +1,11 @@
-import java.util.ArrayList;
+
+import java.util.Collections;
 import java.util.List;
 
 public class Pupil {
 
     private String firstName;
     private String secondName;
-    private Integer mark;
     public List<Integer> allMarks;
 
 
@@ -31,14 +31,37 @@ public class Pupil {
     public float averageMark() {
         float averageMark;
         float suma = 0;
-        for (Integer mark : allMarks)
+        /*for (Integer mark : allMarks)
             suma += mark;
 
         averageMark = suma / allMarks.size();
 
+        return averageMark;*/
+
+        Integer mark;
+        for (mark = 0; mark < allMarks.size() ; mark++)
+
+            suma += mark;
+        averageMark = suma / allMarks.size();
 
         return averageMark;
+        }
+    public int findTheBestMark() {
+        Integer theBestMark = Collections.max(allMarks);
+        return theBestMark;
+        }
+
+    public int findTheWorstMark(){
+        Integer theWorstMark = Collections.min(allMarks);
+        return theWorstMark;
+    }
+
+
 
     }
-    }
+
+
+
+
+
 
