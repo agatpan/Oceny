@@ -35,9 +35,9 @@ public class Pupil {
         return "Imię : " + firstName + ", Nazwisko : " + secondName + ", Oceny : " + allMarks;
     }
 
-    public float averageMark() {
-        float averageMark;
-        float suma = 0;
+    public double averageMark() {
+        double averageMark;
+        double suma = 0;
 
         for (Integer mark : allMarks)
             suma += mark;
