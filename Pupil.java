@@ -6,6 +6,7 @@ public class Pupil {
 
     private String firstName;
     private String secondName;
+
     public List<Integer> allMarks;
 
 
@@ -28,32 +29,33 @@ public class Pupil {
         return allMarks;
     }
 
+    @Override
+    public String toString() {
+
+        return "Imię : " + firstName + ", Nazwisko : " + secondName + ", Oceny : " + allMarks;
+    }
+
     public float averageMark() {
         float averageMark;
         float suma = 0;
-        /*for (Integer mark : allMarks)
+
+        for (Integer mark : allMarks)
             suma += mark;
 
-        averageMark = suma / allMarks.size();
-
-        return averageMark;*/
-
-        Integer mark;
-        for (mark = 0; mark < allMarks.size() ; mark++)
-
-            suma += mark;
         averageMark = suma / allMarks.size();
 
         return averageMark;
+
+
         }
     public int findTheBestMark() {
-        Integer theBestMark = Collections.max(allMarks);
+        Integer theBestMark;
+        theBestMark = Collections.max(allMarks);
         return theBestMark;
         }
 
     public int findTheWorstMark(){
-        Integer theWorstMark = Collections.min(allMarks);
-        return theWorstMark;
+        return Collections.min(allMarks);
     }
 
 
