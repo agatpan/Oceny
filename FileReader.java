@@ -7,8 +7,8 @@ public class FileReader {
 
     public  void readFile() throws IOException{
 
-        ClassLoader classLoader = this.getClass().getClassLoader();
-        String filePath = classLoader.getResource("Oceny.txt").getFile();
+
+        String filePath = "C:/Users/Agata/Documents/Kurs QA/Marks/src/main/java/Oceny.txt";
         File file = new File(filePath);
 
         List<String> lines = Files.readAllLines(file.toPath());
