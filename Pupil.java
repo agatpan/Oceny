@@ -7,7 +7,7 @@ public class Pupil {
     private String firstName;
     private String secondName;
 
-    public List<Integer> allMarks;
+    private List<Integer> allMarks;
 
 
     public Pupil (String firstName, String secondName, List<Integer> allMarks){
