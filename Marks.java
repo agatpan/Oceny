@@ -11,6 +11,5 @@ public class Marks {
         FileReader fileReader = new FileReader();
         fileReader.readFile();
 
-
     }
 }

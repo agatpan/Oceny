@@ -4,6 +4,7 @@ import java.nio.file.Files;
 import java.util.List;
 
 public class FileReader {
+
     public  void readFile() throws IOException{
 
         ClassLoader classLoader = this.getClass().getClassLoader();
