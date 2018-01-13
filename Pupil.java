@@ -2,7 +2,7 @@
 import java.util.Collections;
 import java.util.List;
 
-public class Pupil {
+/* public class Pupil {
 
     private String firstName;
     private String secondName;
@@ -60,7 +60,7 @@ public class Pupil {
 
 
 
-    }
+    }*/
 
 
 
